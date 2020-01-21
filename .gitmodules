@@ -1,0 +1,3 @@
+[submodule "dsd"]
+	path = dsd
+	url = https://github.com/kevinwlu/dsd
