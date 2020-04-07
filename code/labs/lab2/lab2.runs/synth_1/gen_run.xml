@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1582223248">
-  <File Type="VDS-TIMING-PB" Name="hexcount_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="hexcount_timing_summary_synth.rpt"/>
+  <File Type="PA-TCL" Name="hexcount.tcl"/>
+  <File Type="REPORTS-TCL" Name="hexcount_reports.tcl"/>
+  <File Type="RDS-RDS" Name="hexcount.vds"/>
   <File Type="RDS-DCP" Name="hexcount.dcp"/>
   <File Type="RDS-UTIL-PB" Name="hexcount_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="hexcount_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="hexcount_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="hexcount.vds"/>
-  <File Type="REPORTS-TCL" Name="hexcount_reports.tcl"/>
-  <File Type="PA-TCL" Name="hexcount.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/new/counter.vhd">
@@ -54,9 +51,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
